@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackd - Track Your LEGO Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+            border-radius: 28px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .logo span {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+            margin: 50px 0;
+            text-align: left;
+        }
+
+        .feature {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .app-store-badge {
+            margin: 40px 0;
+        }
+
+        .app-store-badge img {
+            height: 50px;
+        }
+
+        .app-store-badge a {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .support-section {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            margin: 50px 0;
+        }
+
+        .support-section h2 {
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .support-section p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .support-section a {
+            color: #007AFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .support-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+        }
+
+        footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #333;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .tagline {
+                font-size: 1.1em;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span>S</span>
+        </div>
+
+        <h1>Stackd</h1>
+        <p class="tagline">Track Your LEGO Portfolio</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📦</div>
+                <h3>Track Collection</h3>
+                <p>Add LEGO sets and minifigures to your digital collection with ease.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">📈</div>
+                <h3>Market Values</h3>
+                <p>Get real-time market prices and track your portfolio's value.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>Track Gains</h3>
+                <p>See how much your collection has grown since you bought it.</p>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">🔍</div>
+                <h3>Easy Search</h3>
+                <p>Find any set or minifig instantly with our powerful search.</p>
+            </div>
+        </div>
+
+        <div class="app-store-badge">
+            <a href="#">Download on the App Store</a>
+        </div>
+
+        <div class="support-section" id="support">
+            <h2>Support</h2>
+            <p>Have questions, feedback, or need help? We're here for you.</p>
+            <p>Contact us at: <a href="mailto:support@stackd.app">support@stackd.app</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Stackd. All rights reserved.</p>
+            <div class="links">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+                <a href="#support">Support</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
